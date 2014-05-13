@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/clock"
+        android:layout_below="@+id/date"
+        android:text="HZ"
+        android:textColor="#0000ff"
+        android:textSize="120sp" />
+
+    <TextView
+        android:id="@+id/currentPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clock"
+        android:layout_below="@+id/currentTemperature"
+        android:text="7HZ mm"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/currentWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentTemperature"
+        android:layout_alignRight="@+id/currentTemperature"
+        android:text="HZ m/s"
+        android:textSize="30sp" />
+
+    <by.alexkus.weather.Date
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/clock"
+        android:layout_below="@+id/clock"
+        android:textSize="30sp" />
+
+    <by.alexkus.weather.Clock
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:textColor="#0000ff"
+        android:textSize="120sp" />
+
+</RelativeLayout>
